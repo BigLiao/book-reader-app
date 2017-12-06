@@ -5,7 +5,7 @@ const Axios = require('axios')
 
 const isProduction = process.env.NODE_ENV === 'production'
 const ERR_OK = 0
-const BASE = isProduction ? 'http://localhost:8888/' : '/proxy/'
+const BASE = isProduction ? '/' : '/proxy/'
 
 /**
  * 发送请求的函数

@@ -8,14 +8,13 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
       path: '/book/:bookId/:chapterId',
       name: 'book',
       component: BookReader
+    },
+    {
+      path: '/',
+      redirect: '/book/3516230/84649702'
     }
   ]
 })
